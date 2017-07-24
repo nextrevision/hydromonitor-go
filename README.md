@@ -1,21 +1,17 @@
-# tilted
+# hydromonitor
 
-> Manages your tilt army
+> Manages your tilt devices
 
-## Build Setup
+## Development Setup
+
+All front-end files are located in the `www` subdirectory.
 
 ``` bash
-# install dependencies
+# start main web server
+go run *.go &
+
+# change to front-end dir
+cd ./www
 npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
+npm run watch &
 ```
-
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
